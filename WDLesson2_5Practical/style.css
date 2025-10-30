@@ -6,7 +6,7 @@ html{
                 using rgb( )
 */
 #banner{
-    background-color: rgb(132, 139, 121)
+    background-color: rgb(200, 226, 159)
 }
 /* Challenge 10: Change the background color for all elements with a class of subbanner.  Choose a color
                 using a hexdecimal value. 
@@ -25,10 +25,23 @@ html{
                  apply some type of styling using the filter( ) effect
 */
 #firstGallery img{
+    filter:blur(2px);
+}
 
+#firstGallery img:hover{
+    filter:none;
 }
 /* Challenge 13: When the visitor moves their mouse over images inside of the element with an id of secondGallery,
                  apply some other type of styling.
 */
+#secondGallery img{
+    filter:grayscale(100%);
+}
+#secondGallery img:hover{
+    filter:none;
 
+}
 /* Challenge 14: Change the transition for all elements to 1 second */
+*{
+    transition: 1s;
+}
