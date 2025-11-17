@@ -16,6 +16,14 @@
    }
    #footer{
       text-align:center;
+      justify-content: center;
       background-color: green;
-      padding:5px;
+      padding:2px;
+      color: white;
+   }
+   .column{
+      flex-direction: column;
+   }
+   #main{
+      flex:1;
    }
