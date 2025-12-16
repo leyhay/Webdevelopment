@@ -2,17 +2,19 @@
    Hint: Remember all the fundamental CSS rules when working with flexboxes */
    .container{
       display:flex;
+      font-family: Arial;
    }
    nav a{
       flex:1;
       background-color:green;
       text-decoration: none;
       color:white;
-      font-family: Arial;
       padding:10px;
+      font-size:25px;
    }
    #banner{
       padding:10px;
+      font-size: 30px;
    }
    #footer{
       text-align:center;
@@ -25,5 +27,11 @@
       flex-direction: column;
    }
    #main{
-      flex:1;
+      font-size: 25px;
+      justify-content: center;
+   }
+   #link{
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
    }
