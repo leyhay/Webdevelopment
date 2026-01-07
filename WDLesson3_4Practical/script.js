@@ -14,9 +14,9 @@ function createStory(){
   let vegetable = document.getElementById("vegetable");
 
   boy1span1.innerHTML=boy.value
-  boy2span2.innerHTML=boy.value
-  boy3span3.innerHTML=boy.value
-  boy4span4.innerHTML=boy.value
+  boy1span2.innerHTML=boy.value 
+  boy1span3.innerHTML=boy.value
+  boy1span4.innerHTML=boy.value
   veg1.innerHTML=veggie.value
   veg2.innerHTML=vegetable.value
   girlspan.innerHTML=girl.value
