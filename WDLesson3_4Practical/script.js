@@ -8,6 +8,19 @@ function createStory(){
   let veg2 = document.getElementById("veg2");
   let girlspan = document.getElementById("girlspan");
 
+  let boy = document.getElementById("boy");
+  let veggie = document.getElementById("veggie");
+  let girl = document.getElementById("girl");
+  let vegetable = document.getElementById("vegetable");
+
+  boy1span1.innerHTML=boy.value
+  boy2span2.innerHTML=boy.value
+  boy3span3.innerHTML=boy.value
+  boy4span4.innerHTML=boy.value
+  veg1.innerHTML=veggie.value
+  veg2.innerHTML=vegetable.value
+  girlspan.innerHTML=girl.value
+
   /* Task 3: Create variables and retrieve the information from the text inputs for the following, 
       1) A boy's name
       2) A vegetable
