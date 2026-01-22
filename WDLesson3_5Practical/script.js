@@ -30,19 +30,19 @@ function recPerimeter(){
 let pi = 3.1415926;
 
 function cirArea(){
-      let r = document.getElementById("rad");
+      let r = document.getElementById("rad").value;
       let output = document.getElementById("output");
 
-      let result2 = parseFloat(pi) * parseFloat(r) * parseFloat(r);
-      output.innerHTML = "Area is" + result2;
+      let result2 = pi * parseFloat(r) * parseFloat(r);
+      output.innerHTML = "Area is " + result2;
 }
 
 function cirPerimeter(){
-      let r = document.getElementById("rad");
+      let r = document.getElementById("rad").value;
       let output = document.getElementById("output");
 
       let result3 = 2*r*pi;
-      output.innerHTML = "Circumfrence is" + result3;
+      output.innerHTML = "Circumfrence is " + result3;
 }
 
 /* Challenge Bonus: Complete the area and perimeter functions below for the triangle.  Guidelines,
