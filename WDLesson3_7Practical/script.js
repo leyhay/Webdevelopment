@@ -18,6 +18,12 @@ function distance(){
       2) Perform the necessary calculations
       3) Display the results in the appropriate element
 */
+function comp(){
+      let p = parseFloat(document.getElementById("p"));
+      let r = parseFloat(document.getElementById("r"));
+      let n = parseFloat(document.getElementById("n"));
+      let t = parseFloat(document.getElementById("t"));
+      let output = document.getElementById("output");
 
-
-
+      
+}
