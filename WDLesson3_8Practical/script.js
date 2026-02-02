@@ -2,7 +2,8 @@
 //  For each challenge fix the error and explain the correction in the comment
 
 
-/* Challenge 4: Does the function name match the event handler referenced in the event listener? */
+/* Challenge 4: Does the function name match the event handler referenced in the event listener?
+no v is uppercased */
 function volume(){
 
   /* Challenge 5: Are there any errors in retrieving and parsing the information from the text inputs?
@@ -16,8 +17,8 @@ function volume(){
   let output = document.getElementById("output");
 
   /* Challenge 7: Is the following calculation for volume of a cylinder correct? 
-  did the math wrong*/
-  let v = math.PI * math.pow(r,2) * h;
+  did the math wrong and wrong variable*/
+  let v = math.PI * math.pow(r,2) * height;
 
   /* Challenge 8: Are there any errors in displaying the output? 
   weird output*/
