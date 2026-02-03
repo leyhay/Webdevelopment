@@ -11,7 +11,15 @@
         let house = ""
 
         // Challenge 9: If the language is equal to "Spanish", set house to "casa"
-
+        if(lang == Spanish){
+          house = "casa"
+        }
+        if(lang == Chinese){
+          house = "家(jia)"
+        }
+        if(lang == Korean){
+          house = "집(jip)"
+        }
         // Challenge 10: Make a similar decision for the other two languages in the drop down.
 
         // Challenge 11: Display an appropriate message stating "house" in the specified language is given translation.       
@@ -42,6 +50,8 @@
         <select id="langauge">
           <option disabled>Select language</option>
           <option>Spanish</option>
+          <option>Chinese</option>
+          <option>Korean</option>
           <!-- Challenge 8: Add two more language as shown above -->
            
         </select>
