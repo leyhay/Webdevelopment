@@ -24,6 +24,8 @@ function comp(){
       let n = parseFloat(document.getElementById("n"));
       let t = parseFloat(document.getElementById("t"));
       let output = document.getElementById("output");
+      let c = Math.pow(p*(1+(r/n)),(n*t));
+      output.innerHTML = "Compound is " + c;
 
       
 }
