@@ -17,11 +17,12 @@ function volume(){
   let output = document.getElementById("output");
 
   /* Challenge 7: Is the following calculation for volume of a cylinder correct? 
-  did the math wrong and wrong variable*/
-  let v = math.PI * math.pow(r,2) * height;
+  did the math wrong and wrong variable
+  m in Math wasnt uppercased*/
+  let v = Math.PI * Math.pow(r,2) * height;
 
   /* Challenge 8: Are there any errors in displaying the output? 
   weird output*/
-  output.innerHTML = "Volume of the cylinder is " + v;
+  output.innerHTML = "Volume is " + v;
 
 }

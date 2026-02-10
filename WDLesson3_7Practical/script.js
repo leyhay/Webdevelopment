@@ -19,13 +19,12 @@ function distance(){
       3) Display the results in the appropriate element
 */
 function comp(){
-      let p = parseFloat(document.getElementById("p"));
-      let r = parseFloat(document.getElementById("r"));
-      let n = parseFloat(document.getElementById("n"));
-      let t = parseFloat(document.getElementById("t"));
+      let p = parseFloat(document.getElementById("p").value);
+      let r = parseFloat(document.getElementById("r").value);
+      let n = parseFloat(document.getElementById("n").value);
+      let t = parseFloat(document.getElementById("t").value);
+      console.log(p)
       let output = document.getElementById("output");
-      let c = Math.pow(p*(1+(r/n)),(n*t));
+      let c = p*(1+(r/n))**(n*t);
       output.innerHTML = "Compound is " + c;
-
-      
 }
