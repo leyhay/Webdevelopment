@@ -44,9 +44,6 @@ html,body{
   border:1px solid gray;
   text-align:center;
 }
-.card img{
-  width:100%;
-}
 .highlight{
   font-style:italic;
   color:blueviolet;
