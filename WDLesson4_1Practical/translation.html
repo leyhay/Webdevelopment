@@ -11,13 +11,13 @@
         let house = ""
 
         // Challenge 9: If the language is equal to "Spanish", set house to "casa"
-        if(lang == Spanish){
+        if(lang == "Spanish"){
           house = "casa"
         }
-        if(lang == Chinese){
+        if(lang == "Chinese"){
           house = "家(jia)"
         }
-        if(lang == Korean){
+        if(lang == "Korean"){
           house = "집(jip)"
         }
         output.innerHTML = `house in ${lang} is ${house}`
@@ -48,7 +48,7 @@
     <div class="container">
       <div class="card">
         <h3> Translate house into another language </h3>
-        <select id="langauge">
+        <select id="language">
           <option disabled>Select language</option>
           <option>Spanish</option>
           <option>Chinese</option>

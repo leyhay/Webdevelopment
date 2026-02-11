@@ -3,6 +3,12 @@
        2) Display BMI status as per the chart in index.html
        3) Display the corresponding image based on the BMI status.
 */
+function bmi(){
+       let w = parseFloat(document.getElementById("weight").value);
+       let h = parseFloat(document.getElementById("height").value);
+       let output = document.getElementById("output");
+       
+}
 /* 
 Guideline:
 1) Create the function
