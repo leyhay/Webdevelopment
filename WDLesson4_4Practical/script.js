@@ -6,7 +6,9 @@
 */
 let correct;
 function generateProblem(){
-       let problem = document.getElementById("problem")
+       let problem = document.getElementById("problem");
+       let output = document.getElementById("output");
+       
 
 }
 
