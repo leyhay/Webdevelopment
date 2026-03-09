@@ -12,3 +12,15 @@ Year 3: $xxxxxx
 ...
 Year N: $xxxxxx
 */
+function Compound(){
+    let p = parseFloat(document.getElementById("p").value);
+    let r = parseFloat(document.getElementById("r").value);
+    let n = parseFloat(document.getElementById("n").value);
+    let t = parseFloat(document.getElementById("t").value);
+    let output = document.getElementById("output");
+    build = "";
+    for(let i=0; i<t; i += 1){
+        build += "p*(1+(r/n))**(n*t)<br>";
+        
+    } 
+}
