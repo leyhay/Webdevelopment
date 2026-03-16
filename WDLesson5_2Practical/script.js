@@ -19,11 +19,11 @@ function init(){
   build = "";
   for(let i=1; i<5; i+=1){
     let n = Math.floor(Math.random() * 4 + 5);
-    build += `<div`;
-    build += `     <img src = "images/title ${i}.png">`;
-    build += `     <img src = "images/pizza ${i}.jpg">`;
+    build += `<div>`;
+    build += `     <img src = "images/title${i}.png"> `;
+    build += `     <img src = "images/pizza${i}.jpg"> <br>`;
     build += `     <span>$${n}</span>`;
-    build += `</div>`  ;
+    build += `</div>`;
   }
   output.innerHTML = build;
 }
