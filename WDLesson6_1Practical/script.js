@@ -4,8 +4,8 @@
 //Challenge 1: Add the appropriate images to each array below from the list above.
 //Challenge 2: Add appropriate prices for each food in their corresponding array.
 //Challenge 3: Add appropriate titles for each food in their corresponding array.  Use the image names as a hint for the food title.
-let meat_titles = [];
-let meats = [];
+let meat_titles = [beeftips, brisket, ribeye, steak];
+let meats = [img src = "beeftips.jpg", img src = "brisket.jpg", img src = "ribeye.jpg", img src = "steak.jpg"];
 let meat_prices = [];
 let seafood_titles = [];
 let seafood = [];
