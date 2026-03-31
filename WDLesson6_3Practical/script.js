@@ -19,15 +19,30 @@ let meats = [
   { title: "Steak", image: "steak.jpg", price: 15.99 }
 ];
 // Challenge 5: Create an array of JSON where each JSON contains the title, a link to an image and price for each seafood.  
-
+let seafoods = [
+  { title: "Clams", image: "clams.jpg", price: 18.99 },
+  { title: "Crabs", image: "crabs.jpg", price: 27.99 },
+  { title: "Lobster", image: "lobster.jpg", price: 21.99 },
+  { title: "Shrimp", image: "shrimp.jpg", price: 15.99 },
+  { title: "Tuna", image: "tuna.jpg", price: 15.99 },
+  { title: "Scallops", image: "scallops.jpg", price: 15.99 }
+];
 
 // Challenge 6: Create an array of JSON where each JSON contains the title, a link to an image and price for each dessert.  
-
+let desserts = [
+  { title: "Flan", image: "flan.jpg", price: 18.99 },
+  { title: "Oreocup", image: "oreocup.jpg", price: 27.99 },
+  { title: "Passionberry", image: "passionberry.jpeg", price: 21.99 }
+];
 
 function meats(){
-  let title = document.querySelector("#title");
+  let title = document.querySelector("#Meats");
   let output = document.querySelector("#output");
   let build = ``;
+  for(let i=0; i<4; i+=1){
+    build +=`<div class="container card">
+                <h2>meats</h2>`
+  }
   /* Challenge 7
      1) Using the array of JSON from Challenge 4, produce cards for all the items.  
      2) Change the title to "Meats".
