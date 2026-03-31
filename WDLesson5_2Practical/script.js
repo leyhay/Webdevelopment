@@ -23,7 +23,7 @@ function init(){
     build += `     <img src = "images/title${i}.png"> `;
     build += `     <img src = "images/pizza${i}.jpg"> <br>`;
     build += `     <span>$${n}</span>`;
-    build += `</div>`;
+    build += `</div> <br>`;
   }
   output.innerHTML = build;
 }
