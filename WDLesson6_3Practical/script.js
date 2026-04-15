@@ -35,13 +35,17 @@ let desserts = [
   { title: "Passionberry", image: "passionberry.jpeg", price: 21.99 }
 ];
 
-function m(){
-  let Meats = document.querySelector("#title");
-  let output = document.querySelector("#output");
+function displayMeats(){
+  let title = document.getElementById("#title");
+  let output = document.getElementById("#items");
   let build = ``;
   for(let i=0; i<meats.length; i+=1){
+    let m = meats[i];
     build +=`<div class="container card">
-                <h2>meats</h2>`
+                <h2>${m.title}</h2>
+                <img src = "images/${m.image}">
+                <p>${m.price}</p>
+            </div>`
   }
   /* Challenge 7
      1) Using the array of JSON from Challenge 4, pce cards for all the items.  
@@ -51,9 +55,9 @@ function m(){
   output.innerHTML = build;
 }
 
-function s(){
-  let Seafood = document.querySelector("#title");
-  let output = document.querySelector("#output");
+function displaySeafood(){
+  let title = document.getElementById("#title");
+  let output = document.getElementById("#item");
   let build = ``;
   for(let i=0; i<seafoods.length; i+=1){
     build +=`<div class="container card">
@@ -66,9 +70,9 @@ function s(){
   output.innerHTML = build;
 }
 
-function d(){
-  let Desserts = document.querySelector("#title");
-  let output = document.querySelector("#output");
+function displayDesserts(){
+  let title = document.getElementById("#title");
+  let output = document.getElementById("#item");
   let build = ``;
   for(let i=0; i<desserts.length; i+=1){
     build +=`<div class="container card">

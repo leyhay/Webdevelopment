@@ -5,6 +5,7 @@ function BHS(){
     "address": "32-24 Corporal Kennedy Street, Bayside NY 11361",
   }
   let output = document.getElementById("output");
+  let build = " ";
   //Challenge 1: Create and display a card of the information contained in the JSON variable school
 
 }
