@@ -1,11 +1,12 @@
 async function init(){
   // Challenge 1: Retrieve the FBI data from https://raw.githubusercontent.com/rcastro2/WebDevelopment/refs/heads/main/data/fbi.json
-  let link = ""
+  let link = "https://raw.githubusercontent.com/rcastro2/WebDevelopment/refs/heads/main/data/fbi.json"
   info = await fetch(link);
   data = await info.json();
   
   let output = document.getElementById("output");
   let build = "";
+
   /* Challenge 2: 
           1) Traverse the data.  
           2) Create a variable to extract each criminal from data.
@@ -15,7 +16,16 @@ async function init(){
      https://mozilla.github.io/pdf.js/web/viewer.html?file=${...}
   */
 
-
+  for(let i=0;i<data.length;i+=1){
+    let crim = data[i];
+    build += `<div class="card">
+                  <h2>${crim.title}</h2>  
+                  <img class= fit src = ${crim.image}><br>
+                  
+                  <a target="_blank" href = https://mozilla.github.io/pdf.js/web/viewer.html?file=${crim.pdf}> POSTER </a>
+              </div>
+`
+  }
 
   output.innerHTML = build;
 
