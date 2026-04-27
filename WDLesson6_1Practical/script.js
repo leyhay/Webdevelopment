@@ -5,7 +5,7 @@
 //Challenge 2: Add appropriate prices for each food in their corresponding array.
 //Challenge 3: Add appropriate titles for each food in their corresponding array.  Use the image names as a hint for the food title.
 let meat_titles = [beeftips, brisket, ribeye, steak];
-let meats = [img src = "beeftips.jpg", img src = "brisket.jpg", img src = "ribeye.jpg", img src = "steak.jpg"];
+let meats = [<img src = "beeftips.jpg"></img>, <img src = "brisket.jpg"></img>, <img src = "ribeye.jpg"></img>, <img src = "steak.jpg"></img>];
 let meat_prices = [];
 let seafood_titles = [];
 let seafood = [];
