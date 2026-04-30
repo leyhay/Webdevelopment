@@ -17,7 +17,7 @@ async function init(){
                      <hr>
                      <p>Reason for Crash : ${complaint.contributing_factor_vehichle_1}</p>
                      <p>Collision ID : ${complaint.collision_id}</p>
-                     <p>Vehichle Type : ${complaint.vehichle_type_code1}</p>
+                     <p>Vehichle Type : ${complaint.vehicle_type_code1}</p>
                 </div>`
     }
     output.innerHTML = build;
@@ -40,7 +40,7 @@ function Area(){
                      <hr>
                      <p>Reason for Crash : ${complaint.contributing_factor_vehichle_1}</p>
                      <p>Collision ID : ${complaint.collision_id}</p>
-                     <p>Vehichle Type : ${complaint.vehichle_type_code1}</p>
+                     <p>Vehichle Type : ${complaint.vehicle_type_code1}</p>
                 </div>`
         }
     }
@@ -64,7 +64,7 @@ function Time(){
                      <hr>
                      <p>Reason for Crash : ${complaint.contributing_factor_vehichle_1}</p>
                      <p>Collision ID : ${complaint.collision_id}</p>
-                     <p>Vehichle Type : ${complaint.vehichle_type_code1}</p>
+                     <p>Vehichle Type : ${complaint.vehicle_type_code1}</p>
                 </div>`
         }
     }
@@ -88,7 +88,7 @@ function Hurt(){
                      <hr>
                      <p>Reason for Crash : ${complaint.contributing_factor_vehichle_1}</p>
                      <p>Collision ID : ${complaint.collision_id}</p>
-                     <p>Vehichle Type : ${complaint.vehichle_type_code1}</p>
+                     <p>Vehichle Type : ${complaint.vehicle_type_code1}</p>
                 </div>`
         }
     }
@@ -112,7 +112,7 @@ function Reason(){
                      <hr>
                      <p>Reason for Crash : ${complaint.contributing_factor_vehichle_1}</p>
                      <p>Collision ID : ${complaint.collision_id}</p>
-                     <p>Vehichle Type : ${complaint.vehichle_type_code1}</p>
+                     <p>Vehichle Type : ${complaint.vehicle_type_code1}</p>
                 </div>`
         }
     }
@@ -136,7 +136,7 @@ function ID(){
                      <hr>
                      <p>Reason for Crash : ${complaint.contributing_factor_vehichle_1}</p>
                      <p>Collision ID : ${complaint.collision_id}</p>
-                     <p>Vehichle Type : ${complaint.vehichle_type_code1}</p>
+                     <p>Vehichle Type : ${complaint.vehicle_type_code1}</p>
                 </div>`
         }
     }
@@ -150,7 +150,7 @@ function Car(){
     build = "";
     for(let i=0;i<data.length;i+=1){
         complaint = data[i]
-        if(complaint.vehichle_type_code1 == car){
+        if(complaint.vehicle_type_code1 == car){
         build += `<div class=card>
                      <h2>Crash Date : ${complaint.crash_date}</h2>
                      <p>Crash Time : ${complaint.crash_time}</p>
@@ -160,7 +160,7 @@ function Car(){
                      <hr>
                      <p>Reason for Crash : ${complaint.contributing_factor_vehichle_1}</p>
                      <p>Collision ID : ${complaint.collision_id}</p>
-                     <p>Vehichle Type : ${complaint.vehichle_type_code1}</p>
+                     <p>Vehichle Type : ${complaint.vehicle_type_code1}</p>
                 </div>`
         }
     }

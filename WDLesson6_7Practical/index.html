@@ -9,26 +9,42 @@
    </head>
   <body onload="init()">
     <div id="banner" class="container center">
-      <h1> Complaints </h1>
+      <h1> COMPLAINTS </h1>
     </div>
+    
     <div class="container subbanner">
       <div>
-        <p class="center">Complaints of nyc</p>
-        <input type="text" id="area" placeholder="Crash site">
-        <input type="button" onclick="Area()" value="Search">
-        <input type="text" id="time" placeholder="Time of crash">
-        <input type="button" onclick="Time()" value="Search">
-        <input type="text" id="hurt" placeholder="Amount injured/killed">
-        <input type="button" onclick="Hurt()" value="Search">
-        <input type="text" id="reason" placeholder="Reason of crash">
-        <input type="button" onclick="Reason()" value="Search">
-        <input type="text" id="collision" placeholder="Collision id">
-        <input type="button" onclick="ID()" value="Search">
-        <input type="text" id="car" placeholder="Vehicle type">
-        <input type="button" onclick="Car()" value="Search">
-       </div>
+        <h2>Filters : </h2>
+      </div>
+      <div class="great">
+        <div class="boom">
+          <input type="text" id="area" placeholder="Crash site">
+          <input type="button" onclick="Area()" value="Search">
+        </div>
+        <div class="boom">
+          <input type="text" id="time" placeholder="Time of crash">
+          <input type="button" onclick="Time()" value="Search">
+        </div>
+        <div class="boom">
+          <input type="text" id="hurt" placeholder="Amount injured/killed">
+          <input type="button" onclick="Hurt()" value="Search">
+        </div>
+        <div class="boom">
+          <input type="text" id="reason" placeholder="Reason of crash">
+          <input type="button" onclick="Reason()" value="Search">
+        </div>
+        <div class="boom">
+          <input type="text" id="collision" placeholder="Collision id">
+          <input type="button" onclick="ID()" value="Search">
+        </div>
+        <div class="boom">
+          <input type="text" id="car" placeholder="Vehicle type">
+          <input type="button" onclick="Car()" value="Search">
+        </div>
+      </div>
     </div>
-    <div class="container" id= output></div>
+
+       <div class="container" id= output></div>
     <hr><br>
     <div id="footer" class="container center">
       <h3>Lesson 6.7 Practical</h3>

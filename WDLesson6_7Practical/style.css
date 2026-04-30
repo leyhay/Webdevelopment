@@ -27,10 +27,13 @@ nav a:hover{
 }
 .subbanner{
   background-color:cornflowerblue;
+  justify-content: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 #banner{
   background-color:blue;
   color:white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 #footer{
   background-color:cornflowerblue;
@@ -76,4 +79,15 @@ nav a:hover{
 }
 #card img{
   width:100%;
+}
+.boom{
+  padding: 9px;
+  margin: 3px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.great{
+  display: flex;
+  padding: 20px;
+  background-color:cornflowerblue;
 }
