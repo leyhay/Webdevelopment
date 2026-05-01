@@ -15,7 +15,7 @@ async function init(){
                      <p>Persons Killed : ${complaint.number_of_persons_killed}</p>
                      <p>Persons Injured : ${complaint.number_of_persons_injured}</p>
                      <hr>
-                     <p>Reason for Crash : ${complaint.contributing_factor_vehichle_1}</p>
+                     <p>Reason for Crash : ${complaint.contributing_factor_vehicle_1}</p>
                      <p>Collision ID : ${complaint.collision_id}</p>
                      <p>Vehichle Type : ${complaint.vehicle_type_code1}</p>
                 </div>`
@@ -38,7 +38,7 @@ function Area(){
                      <p>Persons Killed : ${complaint.number_of_persons_killed}</p>
                      <p>Persons Injured : ${complaint.number_of_persons_injured}</p>
                      <hr>
-                     <p>Reason for Crash : ${complaint.contributing_factor_vehichle_1}</p>
+                     <p>Reason for Crash : ${complaint.contributing_factor_vehicle_1}</p>
                      <p>Collision ID : ${complaint.collision_id}</p>
                      <p>Vehichle Type : ${complaint.vehicle_type_code1}</p>
                 </div>`
@@ -62,7 +62,7 @@ function Time(){
                      <p>Persons Killed : ${complaint.number_of_persons_killed}</p>
                      <p>Persons Injured : ${complaint.number_of_persons_injured}</p>
                      <hr>
-                     <p>Reason for Crash : ${complaint.contributing_factor_vehichle_1}</p>
+                     <p>Reason for Crash : ${complaint.contributing_factor_vehicle_1}</p>
                      <p>Collision ID : ${complaint.collision_id}</p>
                      <p>Vehichle Type : ${complaint.vehicle_type_code1}</p>
                 </div>`
@@ -86,7 +86,7 @@ function Hurt(){
                      <p>Persons Killed : ${complaint.number_of_persons_killed}</p>
                      <p>Persons Injured : ${complaint.number_of_persons_injured}</p>
                      <hr>
-                     <p>Reason for Crash : ${complaint.contributing_factor_vehichle_1}</p>
+                     <p>Reason for Crash : ${complaint.contributing_factor_vehicle_1}</p>
                      <p>Collision ID : ${complaint.collision_id}</p>
                      <p>Vehichle Type : ${complaint.vehicle_type_code1}</p>
                 </div>`
@@ -110,7 +110,7 @@ function Reason(){
                      <p>Persons Killed : ${complaint.number_of_persons_killed}</p>
                      <p>Persons Injured : ${complaint.number_of_persons_injured}</p>
                      <hr>
-                     <p>Reason for Crash : ${complaint.contributing_factor_vehichle_1}</p>
+                     <p>Reason for Crash : ${complaint.contributing_factor_vehicle_1}</p>
                      <p>Collision ID : ${complaint.collision_id}</p>
                      <p>Vehichle Type : ${complaint.vehicle_type_code1}</p>
                 </div>`
@@ -134,7 +134,7 @@ function ID(){
                      <p>Persons Killed : ${complaint.number_of_persons_killed}</p>
                      <p>Persons Injured : ${complaint.number_of_persons_injured}</p>
                      <hr>
-                     <p>Reason for Crash : ${complaint.contributing_factor_vehichle_1}</p>
+                     <p>Reason for Crash : ${complaint.contributing_factor_vehicle_1}</p>
                      <p>Collision ID : ${complaint.collision_id}</p>
                      <p>Vehichle Type : ${complaint.vehicle_type_code1}</p>
                 </div>`
@@ -158,7 +158,35 @@ function Car(){
                      <p>Persons Killed : ${complaint.number_of_persons_killed}</p>
                      <p>Persons Injured : ${complaint.number_of_persons_injured}</p>
                      <hr>
-                     <p>Reason for Crash : ${complaint.contributing_factor_vehichle_1}</p>
+                     <p>Reason for Crash : ${complaint.contributing_factor_vehicle_1}</p>
+                     <p>Collision ID : ${complaint.collision_id}</p>
+                     <p>Vehichle Type : ${complaint.vehicle_type_code1}</p>
+                </div>`
+        }
+    }
+    output.innerHTML = build;
+}
+function Accident(){
+    let a = document.getElementById("area").value;
+    let t = document.getElementById("time").value;
+    let h = document.getElementById("hurt").value;
+    let r = document.getElementById("reason").value;
+    let c = document.getElementById("collision").value;
+    let car = document.getElementById("car").value;
+    let output = document.getElementById("output");
+
+    build = "";
+    for(let i=0;i<data.length;i+=1){
+        complaint = data[i]
+        if(complaint.on_street_name == a && complaint.crash_time == t && complaint.number_of_persons_killed == h || complaint.number_of_persons_injured == h && complaint.contributing_factor_vehichle_1 == r && complaint.collision_id == c && complaint.vehicle_type_code1 == car){
+            build += `<div class=card>
+                     <h2>Crash Date : ${complaint.crash_date}</h2>
+                     <p>Crash Time : ${complaint.crash_time}</p>
+                     <p>Street Name : ${complaint.on_street_name}</p>
+                     <p>Persons Killed : ${complaint.number_of_persons_killed}</p>
+                     <p>Persons Injured : ${complaint.number_of_persons_injured}</p>
+                     <hr>
+                     <p>Reason for Crash : ${complaint.contributing_factor_vehicle_1}</p>
                      <p>Collision ID : ${complaint.collision_id}</p>
                      <p>Vehichle Type : ${complaint.vehicle_type_code1}</p>
                 </div>`
