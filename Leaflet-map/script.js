@@ -7,6 +7,9 @@ function displayMap(){
 
   showMap(lat,lon);
 
+  function filter(){
+    
+  }
 
 }
 
