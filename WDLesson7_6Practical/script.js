@@ -43,6 +43,36 @@ function accidentsByVehicle(){
   //Create the same functionality as for accidentsByBorough except you will be 
   // aggregating for the following vehicles, 'Sedan', 'Station Wagon/Sport Utility Vehicle', 
   // 'Taxi', 'Bus', 'Motorcycle' and other.  "Other" isn't a vehicle type but simply meant to capture all other vehicles. 
+  let s = 0, t = 0, b = 0, m = 0, u = 0, o = 0;
 
+  for(let i=0;i<data.length;i+=1){
+    let accident = data[i]
+    if(accident.vehicle_type_code1 == "Sedan"){
+      s+=1;
+    }
+    else if(accident.vehicle_type_code1 == "Taxi"){
+      t+=1;
+    }
+    else if(accident.vehicle_type_code1 == "Bus"){
+      b+=1;
+    }
+    else if(accident.vehicle_type_code1 == "Motorcycle"){
+      m+=1;
+    }
+    else if(accident.vehicle_type_code1 == "Station Wagon/Sport Utility Vehicle"){
+      u+=1;
+    }
+    
+  }
+  let chartData = [
+    ["Sedan",s],
+    ["Taxi",t],
+    ["Motorcycle", m],
+    ["Bus", b],
+    ["Station Wagon/Sport Utility Vehicle", u]
+  ]
   
+  let chartType = get("chartType").value;
+  
+  displayChart(chartData,"output",chartType)
 }
