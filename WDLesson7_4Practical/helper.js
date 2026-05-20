@@ -9,7 +9,7 @@ function showMap(lat, lon){
   let location = [lat, lon];
   //Line below needed to create the map object once.
   if(!mapObj){
-      mapObj = mapObj.map("map");
+      mapObj = mapObjx.map("map");
   } 
   let map = mapObj.setView(location, 14);// [lat, lon], zoom
 
@@ -24,7 +24,7 @@ function showMap(lat, lon){
 // card() accepts JSON of one complaint and returns a card for the complaint
 function card( dataset ){ 
 
-  let location = [dataset.latitude, dataset.longitude];
+  let location = [dataset.latitude || 0, dataset.longitude || 0];
   console.log(location);
   let build = `<div class="card fitted">
               <h3>Crash date : ${dataset.crash_date}</h3>
